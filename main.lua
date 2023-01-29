@@ -69,6 +69,8 @@ function love.draw()
 	love.graphics.rectangle("fill", 0, 0, w_w, w_h_2)
 	love.graphics.setColor(Colors.BG[_CsStatus.B])
 	love.graphics.rectangle("fill", 0, w_h_2, w_w, w_h_2)
+	love.graphics.setColor(Colors.violet)
+	love.graphics.setFont( Fonts[1] ); love.graphics.print("1.2");
 	love.graphics.setColor(Colors.orange)
 end
 

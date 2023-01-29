@@ -38,7 +38,6 @@ function PickMesa:init()
 end
 
 function PickMesa:enter(oldState,LT)
-	love.graphics.setFont( Fonts[5] )
 	self.longT = LT or false
 end
 
@@ -55,6 +54,7 @@ function PickMesa:touchreleased( id, x, y, dx, dy, pressure )
 end
 
 function PickMesa:draw()
+	love.graphics.setFont( Fonts[5] );
 	drawTittle("PICK MESA")
 
 	for i,B in pairs(self.Bs) do

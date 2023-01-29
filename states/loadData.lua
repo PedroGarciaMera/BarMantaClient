@@ -119,6 +119,7 @@ function loadData:loads()
 		love.graphics.newFont("LemonMilk.otf",100);
 		love.graphics.newFont("LemonMilk.otf",w_h*0.5);
 	}
+	love.graphics.setFont( Fonts[5] );
 
 	_mesaPd = 1 -- Mesa picked
 	_page = 1 -- pagina del submenu
