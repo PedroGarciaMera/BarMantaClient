@@ -168,7 +168,9 @@ function loadData:loads()
 	_CsStatus = {K=2;B=2}
 
 	_Cs.K:on("sended", function(Mi)
-		local M = _Mesas[Mi];	if M.info.sendFK then return end
+		local M = _Mesas[Mi];
+
+		if not M then return end; if M.info.sendFK then return end;
 
 		M.info.sendFK = true
 
@@ -181,7 +183,9 @@ function loadData:loads()
 	end)
 
 	_Cs.B:on("sended", function(Mi)
-		local M = _Mesas[Mi]; if M.info.sendFB then return end
+		local M = _Mesas[Mi]; 
+		
+		if not M then return end; if M.info.sendFB then return end
 
 		M.info.sendFB = true
 
